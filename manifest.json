@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "標籤頁收集器",
+  "version": "1.14",
+  "description": "收集當前窗口的標籤頁並以Markdown格式輸出",
+  "permissions": ["tabs"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

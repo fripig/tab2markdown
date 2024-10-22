@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>標籤頁收集器</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 10px;
+      width: 480px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    #message { 
+      display: none; 
+      background-color: #4CAF50; 
+      color: white; 
+      text-align: center; 
+      padding: 5px; 
+      margin-bottom: 10px; 
+    }
+    .button-container { 
+      display: flex; 
+      justify-content: space-between; 
+      margin-bottom: 10px; 
+    }
+    button { 
+      padding: 5px 10px; 
+    }
+    #output { 
+      width: 100%; 
+      flex-grow: 1;
+      resize: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="message"></div>
+  <div class="button-container">
+    <button id="collect">收集標籤頁</button>
+    <button id="copy">複製內容</button>
+  </div>
+  <textarea id="output" readonly></textarea>
+  <script src="popup.js"></script>
+</body>
+</html>
